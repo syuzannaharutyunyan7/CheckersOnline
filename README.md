@@ -1,66 +1,116 @@
-CheckersOnline (SyuzChecker)
-CheckersOnline is a two-player online Checkers game built in Python.
+Here you go — clean, simple, and ready to **copy-paste as your README.md**:
+
+---
+
+# ♟️ CheckersOnline
+
+CheckersOnline is a two-player **online Checkers game** built using **Python** and **Pygame**.
 It allows two people to connect from different computers and play against each other in real time over the internet or local Wi-Fi.
-This project was created as a learning project to understand how networked games, client–server communication, and game interfaces work together.
-What this game does
-Lets two players play Checkers online
-Works across different Wi-Fi networks
-Shows a clean Pygame-based board
-Highlights valid moves
-Supports captures and king pieces
-Automatically switches turns
-Keeps both players perfectly in sync
-How it works
-The project has two parts:
-Server
-The server is the brain of the game. It:
-Stores the game board
-Checks if moves are legal
-Handles captures and king promotion
-Sends updates to both players
-It is written using:
-socket for networking
-threading to handle two players
-json to send game data
-Client
+
+This project was created to learn how **online multiplayer games work**, how computers communicate using **sockets**, and how to build a graphical game interface in Python.
+
+---
+
+## Features
+
+* Online multiplayer (two players)
+* Works over local network or the internet
+* Clean and simple Pygame interface
+* Valid moves are highlighted
+* Supports captures and king pieces
+* Automatic turn switching
+* Real-time board synchronization
+
+---
+
+## How it works
+
+The project consists of two programs:
+
+### Server
+
+The server controls the game. It:
+
+* Stores the game board
+* Checks if moves are valid
+* Handles captures and king promotion
+* Sends the updated board to both players
+
+It uses sockets for networking and threads to handle two players at the same time.
+
+---
+
+### Client
+
 Each player runs the client. It:
-Draws the board using Pygame
-Lets the player click pieces to move
-Sends moves to the server
-Receives real-time updates from the server
-The server is always in control, so cheating is not possible and both players see the same game.
-Game rules
-Red moves upward, Black moves downward
-Kings can move in all directions
-You capture by jumping over the opponent
-Reaching the opposite side turns a piece into a King
-Only the current player can move
-How to run the game
-1. Install Python
+
+* Displays the board using Pygame
+* Lets players click pieces to move them
+* Sends moves to the server
+* Receives live updates from the server
+
+The server is always responsible for the rules, which keeps the game fair and synchronized.
+
+---
+
+## Game rules
+
+* Red moves upward, Black moves downward
+* Kings can move in all directions
+* Pieces capture by jumping over the opponent
+* Reaching the opposite side turns a piece into a King
+* Only the player whose turn it is can move
+
+---
+
+## How to run
+
+### 1. Install Python
+
 Make sure Python 3 is installed on both computers.
-2. Install Pygame
-Run on both machines:
+
+### 2. Install Pygame
+
+Run this on both machines:
+
+```
 pip install pygame
-3. Start the server
+```
+
+### 3. Start the server
+
 On one computer:
+
+```
 python server.py
-This computer must have port 5555 open.
-4. Start the clients
+```
+
+Make sure port **5555** is open on this computer.
+
+### 4. Start the clients
+
 On both players’ computers:
+
+```
 python client.py
-Enter the IP address of the server when asked.
-How to play
-Click one of your pieces to select it
-Green squares show valid moves
-Click a green square to move
-The game changes turns automatically
-Why this project
-I wanted to build a real online game, not just something that works on one computer.
-This project helped me learn:
-Networking with sockets
-Multiplayer game logic
-Client-server architecture
-Python and Pygame
-It’s a great project for a GitHub portfolio.
-Author
+```
+
+When asked, enter the **IP address** of the computer running the server.
+
+---
+
+## How to play
+
+* Click a piece to select it
+* Green squares show where you can move
+* Click a green square to move
+* Turns change automatically
+
+---
+
+## Author
+
 Syuzanna Harutyunyan
+
+
+---
