@@ -1,7 +1,3 @@
-Here you go — clean, simple, and ready to **copy-paste as your README.md**:
-
----
-
 # ♟️ CheckersOnline
 
 CheckersOnline is a two-player **online Checkers game** built using **Python** and **Pygame**.
@@ -113,4 +109,4 @@ When asked, enter the **IP address** of the computer running the server.
 Syuzanna Harutyunyan
 
 
----
+
